@@ -326,7 +326,7 @@ __slate_public__ void clear_notification_actions(GtkWindow *notif_window)
         slate_notification_window_clear_actions(window);
 }
 
-__slate_public__ void set_notification_hints(GtkWindow *notif_window, GHashTable *hints)
+__slate_public__ void set_notification_hints(GtkWindow *notif_window, GVariant *hints)
 {
         if (!notif_window) {
                 return;

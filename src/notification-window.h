@@ -39,7 +39,7 @@ void slate_notification_window_add_action(SlateNotificationWindow *window, const
 
 void slate_notification_window_clear_actions(SlateNotificationWindow *window);
 
-void slate_notification_window_set_hints(SlateNotificationWindow *window, GHashTable *hints);
+void slate_notification_window_set_hints(SlateNotificationWindow *window, GVariant *hints);
 
 /*
  * Editor modelines  -  https://www.wireshark.org/tools/modelines.html

@@ -296,18 +296,14 @@ void slate_notification_window_clear_actions(SlateNotificationWindow *self)
  * in future mate-notification-daemon will broadcast action-icons as a
  * capability.
  */
-void slate_notification_window_set_hints(SlateNotificationWindow *self, GHashTable *hints)
+void slate_notification_window_set_hints(SlateNotificationWindow *self, GVariant *hints)
 {
-    if (!hints && g_hash_table_size(hints) != 0) {
-        GValue *hash = NULL;
+    GVariant *actions_icons = NULL;
 
-        hash = g_hash_table_lookup(hints, "action-icons");
-    
-        if (!hash || !G_VALUE_HOLDS_BOOLEAN(hash)) {
-            return;
-        }
-    
-        self->action_icons = g_value_get_boolean(hash);
+    g_variant_lookup(hints, "action-icons", "v", &actions_icons);
+
+    if (actions_icons != NULL && g_variant_get_type(actions_icons) == G_VARIANT_TYPE_BOOLEAN) {
+        self->action_icons = g_variant_get_boolean(actions_icons);
     }
 }
 

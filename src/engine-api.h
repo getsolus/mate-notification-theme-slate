@@ -51,7 +51,7 @@ void hide_notification(GtkWindow *notif_window);
 /**
  * Update notification from the given hints mapping
  */
-void set_notification_hints(GtkWindow *notif_window, GHashTable *hints);
+void set_notification_hints(GtkWindow *notif_window, GVariant *hints);
 
 /**
  * Set the textual content for the notification

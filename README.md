@@ -17,7 +17,7 @@ mate-notification-theme-slate is a [Solus project](https://getsol.us/)
 
 ![logo](https://build.getsol.us/logo.png)
 
-![screenshot](https://raw.githubusercontent.com/solus-project/mate-notification-theme-slate/master/landing.png)
+![screenshot](https://raw.githubusercontent.com/getsolus/mate-notification-theme-slate/master/landing.png)
 
 Building
 --------
@@ -37,7 +37,7 @@ Clone the repository:
 
 ```bash
 
-    git clone https://github.com/solus-project/mate-notification-theme-slate.git
+    git clone https://github.com/getsolus/mate-notification-theme-slate.git
 ```
 
 Now build it:
@@ -52,7 +52,6 @@ Now build it:
 License
 -------
 
-Copyright © 2016-2017 Ikey Doherty, Solus Project
-Copyright © 2018-2019 Solus Project
+Copyright © 2016-2019 Solus
 
-mate-notification-theme-slate is available under the terms of the `LGPL-2.1` license
+mate-notification-theme-slate is available under the terms of the `LGPL-2.1-or-later` license

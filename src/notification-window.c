@@ -298,13 +298,17 @@ void slate_notification_window_clear_actions(SlateNotificationWindow *self)
  */
 void slate_notification_window_set_hints(SlateNotificationWindow *self, GHashTable *hints)
 {
+    if (!hints && g_hash_table_size(hints) != 0) {
         GValue *hash = NULL;
 
         hash = g_hash_table_lookup(hints, "action-icons");
+    
         if (!hash || !G_VALUE_HOLDS_BOOLEAN(hash)) {
-                return;
+            return;
         }
+    
         self->action_icons = g_value_get_boolean(hash);
+    }
 }
 
 /*

@@ -52,6 +52,6 @@ Now build it:
 License
 -------
 
-Copyright © 2016-2019 Solus
+Copyright © 2016-2020 Solus
 
 mate-notification-theme-slate is available under the terms of the `LGPL-2.1-or-later` license

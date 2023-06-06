@@ -1,5 +1,5 @@
 var gulp        = require("gulp");
-var sass        = require("gulp-sass");
+var sass        = require("gulp-sass")(require('sass'));
 var filter      = require('gulp-filter');
 
 function buildTheme(version)
@@ -22,4 +22,4 @@ themeVersions.forEach(function(version) {
     });
 });
 
-gulp.task('default', themeVersions);
+gulp.task('default', gulp.series(themeVersions));

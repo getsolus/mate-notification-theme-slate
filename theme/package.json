@@ -1,7 +1,8 @@
 {
   "devDependencies": {
-    "gulp": "~3.9.0",
-    "gulp-filter": "~2.0.2",
-    "gulp-sass": "~2.0.4"
+    "gulp": "~4.0.2",
+    "gulp-filter": "~7.0.0",
+    "gulp-sass": "~5.1.0",
+    "sass": "~1.62.1"
   }
 }
